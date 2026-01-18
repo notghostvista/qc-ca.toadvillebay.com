@@ -22,8 +22,137 @@
     .ref-card { background:#f8fbff; color:#02243a; border:1px solid #cfe0fb; padding:12px 14px; border-radius:8px; box-shadow:0 3px 10px rgba(2,36,58,0.06); min-width:200px; }
     .ref-card strong{display:block}
     .h1-accent { color: #002244; }
-    .pm-photo { max-width:220px; width:100%; height:auto; border-radius:8px; display:block; margin:12px 0; }
-    @media (max-width:640px){ .ref-table th, .ref-table td{font-size:14px;} .ref-stats{flex-direction:column;} }
+
+    /* NEW: Organized profile header layout */
+    .pm-profile {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .pm-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      border: 4px solid #e9f2ff;
+      box-shadow: 0 6px 18px rgba(2,36,58,0.10);
+      margin: 0;
+    }
+
+    .pm-title {
+      margin: 0 0 6px 0;
+    }
+
+    .pm-subtitle {
+      margin: 0 0 12px 0;
+      opacity: 0.9;
+    }
+
+    .pm-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 14px;
+      margin-top: 10px;
+    }
+
+    .pm-meta .meta-item {
+      background: #f8fbff;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #cfe0fb;
+      border-radius: 10px;
+      padding: 10px 12px;
+      box-shadow: 0 3px 10px rgba(2,36,58,0.06);
+      color: #02243a;
+    }
+
+    .pm-meta .meta-item strong {
+      display: block;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-bottom: 2px;
+    }
+
+    .pm-meta .meta-item span {
+      display: block;
+      font-weight: 700;
+      color: #002244;
+    }
+
+    .pm-summary {
+      margin-top: 14px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 640px){
+      .ref-table th, .ref-table td{font-size:14px;}
+      .ref-stats{flex-direction:column;}
+
+      .pm-profile{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+      .pm-meta{
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+    }
+
+    /* =========================
+       ADDED: Watermark + Parti logo
+       ========================= */
+
+    /* Make meta cards able to hold a watermark layer */
+    .pm-meta .meta-item{
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Watermark background on ALL boxes EXCEPT the party box */
+    .pm-meta .meta-item:not(.meta-party)::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      /* Pick your watermark image here */
+      background: url("../Images and Videos/ToadVilleCOA.png") right 14px center / 120px no-repeat;
+
+      opacity: 0.12;
+      pointer-events: none;
+      z-index: 0;
+
+      /* Fade out the watermark so it blends into the card */
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+    }
+
+    /* Keep text ABOVE the watermark */
+    .pm-meta .meta-item strong,
+    .pm-meta .meta-item span{
+      position: relative;
+      z-index: 1;
+    }
+
+    /* PARTY card: no watermark, but includes a logo image */
+    .pm-meta .meta-party{
+      padding-right: 52px; /* space for the logo */
+    }
+
+    .pm-meta .meta-party .party-mark{
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      border-radius: 8px;
+      opacity: 0.95;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
@@ -31,7 +160,7 @@
     <div class="site-header__top">
       <a class="site-brand" href="/index.html">
         <img src="../Images and Videos/flag.png" alt="ToadVille Bay Canada" class="brand-mark" />
-        <span class="brand-text">ToadVille Bay</span>
+        <span class="brand-text">ToadVille Bay Canada</span>
       </a>
       <div class="site-utils">
         <form class="site-search" role="search" aria-label="Recherche sur le site" onsubmit="handleSearch(event)">
@@ -52,20 +181,50 @@
 
   <main class="page-content">
     <section class="content-block" aria-labelledby="pm-name">
-      <h2 id="pm-name">Premier ministre — Gabriel Medrano</h2>
-      <img src="Images and Videos/founder.jpg" alt="Gabriel Medrano" class="pm-photo" />
-      <p><strong>Aussi connu sous le nom :</strong> GhostVista</p>
-      <p><strong>Date de naissance :</strong> 29 mai 2009</p>
-      <p><strong>En fonction depuis :</strong> 03-07-2019 (3 juillet 2019)</p>
-      <p>
-        Gabriel Medrano est le premier premier ministre de ToadVille Bay Canada. Il assure la direction des opérations gouvernementales, de l’engagement communautaire et des initiatives stratégiques. Le Bureau du premier ministre se concentre sur le développement économique, les services publics et la représentation de ToadVille Bay Canada aux niveaux national et international.
-      </p>
+      <div class="pm-profile">
+        <img src="Images and Videos/founder.jpg" alt="Gabriel Medrano" class="pm-photo" />
+
+        <div>
+          <h2 id="pm-name" class="pm-title">Premier ministre — Gabriel Medrano</h2>
+          <p class="pm-subtitle"><strong>Aussi connu sous le nom :</strong> GhostVista</p>
+
+          <div class="pm-meta" aria-label="Renseignements clés">
+            <div class="meta-item">
+              <strong>Date de naissance</strong>
+              <span>29 mai 2009</span>
+            </div>
+            <div class="meta-item">
+              <strong>En fonction depuis</strong>
+              <span>3 juillet 2019</span>
+            </div>
+            <div class="meta-item">
+              <strong>Titre</strong>
+              <span>1er premier ministre</span>
+            </div>
+
+            <!-- UPDATED: meta-party class + party-mark image -->
+            <div class="meta-item meta-party">
+              <strong>Parti</strong>
+              <span>Bloc ToadVille (centre-gauche à centre)</span>
+              <img class="party-mark" src="../Images and Videos/flag.png" alt="Logo du Bloc ToadVille">
+            </div>
+          </div>
+
+          <p class="pm-summary">
+            Gabriel Medrano est le premier premier ministre de ToadVille Bay Canada. Il assure la direction des opérations gouvernementales,
+            de l’engagement communautaire et des initiatives stratégiques. Le Bureau du premier ministre se concentre sur le développement économique,
+            les services publics et la représentation de ToadVille Bay Canada aux niveaux national et international.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="content-block" aria-labelledby="pm-bio">
       <h2 id="pm-bio">À propos de Gabriel Medrano</h2>
       <p>
-        Gabriel Medrano (alias GhostVista) est entré en fonction le 3 juillet 2019. Durant son mandat, il s’est concentré sur l’amélioration de ToadVille Bay Canada grâce à des réformes et à d’importantes initiatives économiques. ToadVille Bay est devenue l’une des plus grandes économies de l’univers narratif de ToadVille.
+        Gabriel Medrano (alias GhostVista) est entré en fonction le 3 juillet 2019. Durant son mandat, il s’est concentré sur l’amélioration
+        de ToadVille Bay Canada grâce à des réformes et à d’importantes initiatives économiques. ToadVille Bay est devenue l’une des plus grandes
+        économies de l’univers narratif de ToadVille.
       </p>
       <ul>
         <li><strong>Priorités :</strong> Croissance économique, abordabilité, égalité et engagement communautaire</li>
@@ -77,21 +236,11 @@
     <section class="content-block" aria-labelledby="pm-responsibilities">
       <h2 id="pm-responsibilities">Responsabilités</h2>
       <p>
-        Les responsabilités du premier ministre comprennent l’établissement des priorités gouvernementales, la direction des politiques exécutives, la coordination avec les dirigeants municipaux et la représentation de ToadVille Bay Canada dans les affaires intergouvernementales.
+        Les responsabilités du premier ministre comprennent l’établissement des priorités gouvernementales, la direction des politiques exécutives,
+        la coordination avec les dirigeants municipaux et la représentation de ToadVille Bay Canada dans les affaires intergouvernementales.
       </p>
     </section>
 
-    <section class="content-block" aria-labelledby="pm-quick">
-      <h2 id="pm-quick">Faits en bref</h2>
-      <div class="ref-stats">
-        <div class="ref-card"><strong>Nom :</strong> Gabriel Medrano</div>
-        <div class="ref-card"><strong>Aussi connu sous le nom :</strong> GhostVista</div>
-        <div class="ref-card"><strong>Date de naissance :</strong> 29 mai 2009</div>
-        <div class="ref-card"><strong>En fonction depuis :</strong> 3 juillet 2019</div>
-        <div class="ref-card"><strong>Parti :</strong> Bloc ToadVille (centre-gauche à centre)</div>
-      </div>
-    </section>
-  </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
