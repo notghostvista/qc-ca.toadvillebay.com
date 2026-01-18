@@ -12,7 +12,180 @@
     <link rel="apple-touch-icon" href="./Images and Videos/ToadVilleCOA.png" />
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* CSS inchangé */
+
+        .profile-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, var(--tvb-surface-alt), white);
+        }
+
+        .profile-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--tvb-primary);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background: white;
+            animation: gentle-bounce 3s ease-in-out infinite;
+        }
+
+        .profile-image:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 2.5em;
+            color: var(--tvb-primary);
+            margin-bottom: 10px;
+        }
+
+        .profile-title {
+            font-size: 1.2em;
+            color: var(--tvb-text);
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .profile-bio {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            color: var(--tvb-text);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .about-card {
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .about-card h2 {
+            color: var(--tvb-primary);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .about-card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--tvb-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        .legal-section {
+            background: var(--tvb-surface-alt);
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .legal-card {
+            background: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .legal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .legal-card h3 {
+            color: var(--tvb-primary);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .legal-card p {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .legal-card .cta-button {
+            background: var(--tvb-primary);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .legal-card .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2em;
+            }
+
+            .about-card {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -20,7 +193,7 @@
         <div class="site-header__top">
             <a class="site-brand" href="/index.html">
                 <img src="Images and Videos/flag.png" alt="ToadVille Bay Canada" class="brand-mark" />
-                <span class="brand-text">ToadVille Bay Canada</span>
+                <span class="brand-text">ToadVille Bay</span>
             </a>
             <div class="site-utils">
                 <form class="site-search" role="search" aria-label="Recherche sur le site" onsubmit="handleSearch(event)">
@@ -41,7 +214,7 @@
         <h1 class="profile-name">Gabriel M.</h1>
         <p class="profile-title">Créateur et designer de ToadVille Bay Canada</p>
         <p class="profile-bio">
-            Développeur Web et designer mexicano-américain originaire de Californie, j’apporte une perspective neurodivergente unique au design numérique. En tant que créateur autiste, j’ai canalisé ma passion pour l’accessibilité et l’expérience utilisateur afin de réimaginer les services gouvernementaux. ToadVille Bay Canada s’inspire d’un jeu du même nom, où son univers virtuel a été transformé en une exploration de la façon dont les sites Web gouvernementaux pourraient être plus engageants et inclusifs. Ce projet combine l’amour du jeu vidéo avec la mission de rendre les services publics plus accessibles et conviviaux pour tout le monde.
+            Développeur Web et designer mexicano-américain originaire de Californie, j’apporte une perspective neurodivergente unique au design numérique. En tant que créateur autiste, j’ai canalisé ma passion pour l’accessibilité et l’expérience utilisateur afin de réimaginer les services gouvernementaux. ToadVille Bay Canada s’inspire d’un jeu du même nom, transformant son univers virtuel en une exploration de la façon dont les sites Web gouvernementaux pourraient être plus engageants et inclusifs. Ce projet combine l’amour du jeu vidéo avec la mission de rendre les services publics plus accessibles et conviviaux pour tout le monde.
         </p>
     </section>
 
@@ -50,7 +223,7 @@
             <div class="about-card">
                 <h2>Qu’est-ce que ToadVille Bay</h2>
                 <p>
-                    ToadVille Bay est un pays fictif situé dans un univers fictif riche en histoire et en lore, actuellement en développement sous forme de jeu vidéo. Il y a énormément à explorer, et ToadVille Bay Canada est aussi un projet communautaire qui permet d’élargir l’univers bien au-delà de ce qu’il est aujourd’hui.
+                    ToadVille Bay est un pays fictif situé dans un univers riche en histoire et en lore, actuellement en développement sous forme de jeu vidéo. Il y a énormément à explorer, et ToadVille Bay Canada est aussi un projet communautaire permettant d’élargir l’univers bien au-delà de ce qu’il est aujourd’hui.
                 </p>
             </div>
 
@@ -64,7 +237,7 @@
             <div class="about-card">
                 <h2>Innovation numérique</h2>
                 <p>
-                    ToadVille Bay Canada agit comme un gouvernement fictif. Ce site Web vise à reproduire les services de ToadVille Bay dans le jeu. Il est également possible d’y trouver des conseils de jeu, ou d’utiliser des wikis créés par des fans — selon ce qui convient le mieux à chacun.
+                    ToadVille Bay Canada agit comme un gouvernement fictif. Ce site Web vise à reproduire les services de ToadVille Bay dans le jeu. Il est également possible d’y trouver des conseils de jeu ou d’utiliser des wikis créés par des fans, selon ce qui convient le mieux.
                 </p>
             </div>
         </div>
