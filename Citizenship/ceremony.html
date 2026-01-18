@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Citizenship Ceremony</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* Page-scoped styles (ceremony only) */
+    .ceremony-page .hero__content h1{position:relative;padding-bottom:8px}
+    .ceremony-page .hero__content h1::after{content:'';position:absolute;left:0;bottom:0;width:64px;height:4px;background:#ef4444;border-radius:2px}
+    .ceremony-page .toc{margin:18px 0 24px}
+    .ceremony-page .toc h2{font-size:1.3rem;margin:0 0 8px}
+    .ceremony-page .toc ul{padding-left:18px}
+    .ceremony-page .toc li{margin:6px 0}
+    .ceremony-page .toc a{color:var(--tvb-primary);text-decoration:underline}
+    /* Media styles */
+    .ceremony-page .media-embed{margin:10px 0 8px}
+    .ceremony-page .media-embed video{width:100%;max-width:720px;border:1px solid var(--tvb-border);border-radius:8px;background:#000}
+    .ceremony-page .media-embed figcaption{color:var(--tvb-muted);font-size:.9rem;margin-top:6px}
+    .ceremony-page .anthem-lyrics{margin-top:10px;color:var(--tvb-text)}
+    .ceremony-page .anthem-lyrics h3{margin:12px 0 6px}
+    .ceremony-page .anthem-lyrics p{margin:0 0 8px}
+  </style>
+</head>
+<body class="ceremony-page">
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Citizenship Ceremony">
+    <div class="hero__content">
+      <h1>What to expect at your citizenship ceremony</h1>
+      <p>How to prepare, what happens on the day, and the steps to take afterwards.</p>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <nav class="toc" aria-label="On this page">
+    </nav>
+    <section id="prepare" class="card-grid" aria-labelledby="prepare-title">
+      <h2 id="prepare-title">Before you arrive</h2>
+      <div class="grid">
+        <a class="card" href="#documents"><h3>What to bring</h3><p>Photo ID, ceremony notice, PR card (or COPR), and any originals listed in your notice.</p></a>
+        <a class="card" href="#cant-attend"><h3>If you can’t attend</h3><p>How to notify us and request a new date if you’re unable to attend.</p></a>
+        <a class="card" href="#dress"><h3>What to wear</h3><p>Dress respectfully and comfortably; cultural attire is welcome.</p></a>
+      </div>
+    </section>
+
+    <!-- Anthem section moved below the Oath -->
+
+    <section id="getting-there" class="card-grid" aria-labelledby="travel-title">
+      <h2 id="travel-title">Arrival and check‑in</h2>
+      <div class="grid">
+        <a class="card" href="#location"><h3>Location & check‑in</h3><p>Arrive 30–45 minutes early. Follow signs and staff instructions on arrival.</p></a>
+        <a class="card" href="#security"><h3>Security screening</h3><p>Standard screening applies. Review prohibited items before you come.</p></a>
+      </div>
+    </section>
+
+    <section id="expect" class="card-grid" aria-labelledby="expect-title">
+      <h2 id="expect-title">What to expect</h2>
+      <div class="grid">
+        <a class="card" href="#oath"><h3>The Oath of Citizenship</h3><p>Administered by a judge or official; you’ll repeat the oath together.</p></a>
+        <a class="card" href="#anthem"><h3>National anthem</h3><p>You’ll be invited to stand and sing the anthem; lyrics are provided.</p></a>
+        <a class="card" href="#certificate"><h3>Citizenship certificate</h3><p>Issued after the oath is completed and your identity is confirmed.</p></a>
+      </div>
+    </section>
+
+    <section id="during" class="card-grid" aria-labelledby="during-title">
+      <h2 id="during-title">During the ceremony</h2>
+      <div class="grid">
+        <a class="card" href="#seating"><h3>Seating & conduct</h3><p>Follow seating assignments and on‑site directions; silence devices.</p></a>
+        <a class="card" href="#photos"><h3>Photos</h3><p>Photography is usually allowed after the oath; check local guidance.</p></a>
+        <a class="card" href="#accessibility"><h3>Accessibility</h3><p>Accommodations are available on request; ask staff if you need help.</p></a>
+      </div>
+    </section>
+
+    <section id="after" class="card-grid" aria-labelledby="after-title">
+      <h2 id="after-title">After the ceremony</h2>
+      <div class="grid">
+        <a class="card" href="#passport"><h3>Apply for a passport</h3><p>Use your certificate to apply for a national passport.</p></a>
+        <a class="card" href="#records"><h3>Update your records</h3><p>Notify employers, schools, and agencies of your new status.</p></a>
+        <a class="card" href="#celebrate"><h3>Celebrate</h3><p>Share your milestone with family and friends—congratulations!</p></a>
+      </div>
+    </section>
+
+    <!-- Security placed before What to bring -->
+    <section id="security" class="news" aria-labelledby="security-title">
+      <h2 id="security-title">Security and prohibited items</h2>
+      <article class="news-item">
+        <p>Standard security measures apply at the venue. Avoid bringing large bags or prohibited items (for example, weapons, sharp objects, or anything restricted by local regulations). You may be asked to pass through screening and show ID more than once.</p>
+        <ul>
+          <li>Photography and recording rules vary by venue—ask staff before recording.</li>
+          <li>Food and drinks may be restricted in the ceremony room (water is typically allowed).</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Detailed info blocks -->
+    <section id="documents" class="news" aria-labelledby="documents-title">
+      <h2 id="documents-title">What to bring</h2>
+      <article class="news-item">
+        <p>Bring your ceremony notice, permanent resident card (or Confirmation of Permanent Residence, if applicable), government‑issued photo ID, and any originals listed in your notice (for example, travel documents). If something is missing, tell an official at check‑in.</p>
+        <ul>
+          <li>Your notice may include additional instructions (arrival time, room, security limits).</li>
+          <li>If your PR card has expired, bring it anyway (or COPR). You can still take the oath.</li>
+          <li>Bring assistive devices or interpretation notes if you arranged accommodations.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="transit" class="news" aria-labelledby="transit-title">
+      <h2 id="transit-title">Arrival and timing</h2>
+      <article class="news-item">
+        <p>Arrive 30–45 minutes early for screening and check‑in. Review your notice for the exact address, room, and any venue‑specific instructions. Plan your route ahead and allow extra time for traffic or parking.</p>
+        <ul>
+          <li>Have your documents ready in hand before you reach the check‑in table.</li>
+          <li>Follow staff for seating; family members and guests may be directed to a separate area.</li>
+          <li>Total time at the venue is typically 1.5–3 hours, depending on attendance.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="location" class="news" aria-labelledby="location-title">
+      <h2 id="location-title">Location and check‑in</h2>
+      <article class="news-item">
+        <ul>
+          <li>Use the address and room number listed on your ceremony notice. Some venues use separate entrances.</li>
+          <li>At check‑in, staff will confirm your identity and collect any outstanding documents.</li>
+          <li>If you need help with directions or accessibility, ask a staff member on arrival.</li>
+          <li>Make sure you have your PR Card with you, you may turn it in or destroy it and keep it as a keepsake.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="dress" class="news" aria-labelledby="dress-title">
+      <h2 id="dress-title">What to wear</h2>
+      <article class="news-item">
+        <ul>
+          <li>Dress respectfully and comfortably. Cultural attire is welcome.</li>
+          <li>Layers are recommended as venues may be cool or warm depending on season.</li>
+          <li>Avoid hats unless for religious or cultural reasons (you may be asked to briefly lift for ID).</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="oath" class="news" aria-labelledby="oath-title">
+      <h2 id="oath-title">Taking the oath</h2>
+      <article class="news-item">
+        <p>At the heart of the ceremony, you will be invited to stand and repeat the Oath of Citizenship along with other candidates. A citizenship judge or official will lead the oath and explain each step. If you need language or other accommodations, let staff know.</p>
+        <ul>
+          <li>You’ll be asked to repeat the oath clearly; instructions will be provided on the spot.</li>
+          <li>Some ceremonies include short remarks, acknowledgements, and the national anthem.</li>
+          <li>If you have a name change in progress, officials may verify details before issuing your certificate.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Anthem placed after the oath -->
+    <section id="anthem" class="news" aria-labelledby="anthem-title">
+      <h2 id="anthem-title">National anthem</h2>
+      <article class="news-item">
+        <p>After the oath, you’ll be invited to stand for the national anthem. Lyrics are provided on‑site. You’re welcome to sing along. If you’ve arranged an accommodation that affects standing or speaking, follow the guidance provided by staff.</p>
+        <ul>
+          <li>Keep devices silenced during the anthem.</li>
+          <li>Photography or recording rules may vary by venue—check with staff.</li>
+        </ul>
+        <figure class="media-embed">
+          <iframe width="100%" height="406" style="max-width:720px;border:1px solid var(--tvb-border);border-radius:8px" src="https://www.youtube.com/embed/zwDvF0NtgdU" title="Anthem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>The National Anthem</figcaption>
+        </figure>
+        <div class="anthem-lyrics" aria-labelledby="anthem-lyrics-title">
+          <h3 id="anthem-lyrics-title">Lyrics (placeholder: O Canada)</h3>
+          <p>O Canada! Our home and native land!<br>
+          True patriot love in all of us command.<br>
+          With glowing hearts we see thee rise,<br>
+          The True North strong and free!<br>
+          From far and wide, O Canada,<br>
+          We stand on guard for thee.</p>
+          <p>God keep our land glorious and free!<br>
+          O Canada, we stand on guard for thee.<br>
+          O Canada, we stand on guard for thee.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- (security section moved above) -->
+
+    <section id="passport" class="news" aria-labelledby="passport-title">
+      <h2 id="passport-title">After the ceremony</h2>
+      <article class="news-item">
+        <p><strong>Congratulations!</strong> This is a major milestone. Take a moment to celebrate your achievement and the contributions you’ll bring to our community.</p>
+        <p>Once you’ve received your citizenship certificate, you can apply for a passport. Update your records (for example, with employers, schools, and government agencies) and celebrate your achievement with family and friends.</p>
+        <ul>
+          <li>Keep your citizenship certificate safe; it is a vital record and should not be laminated.</li>
+          <li>If there’s an error on the certificate, notify officials immediately or follow the correction process.</li>
+          <li>Some benefits and services may require you to update status or provide your new certificate.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="records" class="news" aria-labelledby="records-title">
+      <h2 id="records-title">Update your records</h2>
+      <article class="news-item">
+        <ul>
+          <li>Government services: health, taxation, driver’s licence, voter registration (where applicable).</li>
+          <li>Employers and schools: update HR/student records to reflect your new status.</li>
+          <li>Financial institutions: update banking and investment profiles if needed.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="celebrate" class="news" aria-labelledby="celebrate-title">
+      <h2 id="celebrate-title">Celebrate</h2>
+      <article class="news-item">
+        <p>Share your milestone with family and friends. Many venues provide a space for photos after the ceremony—ask staff if you’re unsure.</p>
+      </article>
+    </section>
+
+    <section id="cant-attend" class="news" aria-labelledby="cant-attend-title">
+      <h2 id="cant-attend-title">If you can’t attend</h2>
+      <article class="news-item">
+        <p>If you’re unable to attend your scheduled ceremony, follow the instructions in your notice to contact us as soon as possible. Provide your reason and any supporting documents to request a new date.</p>
+        <ul>
+          <li>Missing your ceremony without notice can delay your application.</li>
+          <li>If you’re ill or have an emergency, contact the office listed on your notice.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="accessibility" class="news" aria-labelledby="accessibility-title">
+      <h2 id="accessibility-title">Accessibility and accommodations</h2>
+      <article class="news-item">
+        <p>We aim to make ceremonies accessible. If you or your guests need accommodations (for example, mobility access, seating, language, or interpretation), inform staff in advance or on arrival so we can assist.</p>
+        <ul>
+          <li>Ask about accessible seating, entrances, washrooms, or interpretation services.</li>
+          <li>Let staff know if you need a quiet space or additional time for check‑in.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="virtual" class="news" aria-labelledby="virtual-title">
+      <h2 id="virtual-title">Virtual ceremonies</h2>
+      <article class="news-item">
+        <p>If your ceremony is virtual, test your device and internet connection ahead of time. Keep your camera on when requested, have your documents ready, and follow the official’s instructions during the oath.</p>
+        <ul>
+          <li>Set up in a quiet, well‑lit space with a stable internet connection.</li>
+          <li>Have your ID and documents within reach; you may be asked to show them on camera.</li>
+          <li>Mute your microphone unless asked to speak; unmute for the oath when instructed.</li>
+          <li>If you disconnect, try to rejoin immediately; backup instructions may be in your notice.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="etiquette" class="news" aria-labelledby="etiquette-title">
+      <h2 id="etiquette-title">Ceremony etiquette</h2>
+      <article class="news-item">
+        <ul>
+          <li>Arrive on time and follow directions from staff and the presiding official.</li>
+          <li>Silence devices; photography is typically allowed after the oath.</li>
+          <li>Stand for the oath and anthem unless you’ve arranged an accommodation.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="children-guests" class="news" aria-labelledby="children-title">
+      <h2 id="children-title">Children and guests</h2>
+      <article class="news-item">
+        <ul>
+          <li>Guest capacity may be limited by venue—check your notice for details.</li>
+          <li>Children may attend; please supervise young children during the ceremony.</li>
+          <li>Seating is often assigned; guests may be seated separately from candidates.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

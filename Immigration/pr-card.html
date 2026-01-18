@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Permanent Resident Card - ToadVille Bay</title>
+  <meta content="ToadVille Bay – Permanent Resident Card" property="og:title" />
+  <meta content="Information on the Permanent Resident Card and how to get one." property="og:description" />
+  <meta content="https://toadvillebay.com/Immigration/pr-card.html" property="og:url" />
+  <meta content="https://toadvillebay.com/Images and Videos/pr.png" property="og:image" />
+  <meta content="#0066CC" data-react-helmet="true" name="theme-color" />
+  <link rel="icon" type="image/png" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="apple-touch-icon" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="PR Card">
+    <div class="hero__content">
+      <h1 class="h1-accent">Permanent Resident (PR) Card</h1>
+      <p>Proof of your permanent resident status for travel and re-entry.</p>
+      <a class="btn-primary" href="./permanent-resident.html">About PR status</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="content-block" aria-labelledby="what-title">
+      <h2 id="what-title">What is a PR Card?</h2>
+      <p>Your PR Card is the wallet-sized card that proves you are a permanent resident. You typically need a valid PR Card to board a commercial carrier to return to ToadVille Bay.</p>
+      <figure class="media">
+        <img src="../Images and Videos/pr.png" alt="Sample image of a Permanent Resident card" style="max-width: 420px; width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.15);" />
+        <figcaption>Example of a PR Card. Replace only if lost, stolen, or expired.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card-grid" aria-labelledby="actions-title">
+      <h2 id="actions-title">Apply, renew, or replace</h2>
+      <div class="grid">
+        <a class="card" href="https://forms.gle/HQf5WaEYB9Yyd3ty8" aria-label="Apply for your first PR Card">
+          <h3>Apply (first card)</h3>
+          <p>Who is eligible, documents, photos, and application package.</p>
+        </a>
+        <a class="card" href="#renew" aria-label="Renew an expiring PR Card">
+          <h3>Renew</h3>
+          <p>Renew before it expires so you can keep travelling and re-entering smoothly.</p>
+        </a>
+        <a class="card" href="#replace" aria-label="Replace a lost, stolen, or damaged PR Card">
+          <h3>Replace</h3>
+          <p>If your card is lost, stolen, damaged, or has incorrect information.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="apply" class="content-block" aria-labelledby="apply-title">
+      <h2 id="apply-title">Apply for your first PR Card</h2>
+      <ol>
+        <li>Gather ID and proof of PR status.</li>
+        <li>Get a compliant photo.</li>
+        <li>Complete the application forms.</li>
+        <li>Pay the fees.</li>
+        <li>Submit your application package.</li>
+      </ol>
+    </section>
+
+    <section id="renew" class="content-block" aria-labelledby="renew-title">
+      <h2 id="renew-title">Renew an expiring card</h2>
+      <p>Renew about 6 months before expiry, especially if you plan to travel.</p>
+    </section>
+
+    <section id="replace" class="content-block" aria-labelledby="replace-title">
+      <h2 id="replace-title">Replace a lost, stolen, or damaged card</h2>
+      <p>Report the loss or theft and submit a replacement application with new photos.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

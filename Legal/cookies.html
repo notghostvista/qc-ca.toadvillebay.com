@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cookie Policy – ToadVille Bay</title>
+  <meta content="ToadVille Bay Cookie Policy" property="og:title" />
+  <meta content="Information about how ToadVille Bay uses cookies and other tracking technologies." property="og:description" />
+  <meta content="https://toadvillebay.com/Legal/cookies.html" property="og:url" />
+  <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+  <link rel="icon" type="image/png" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="apple-touch-icon" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Cookie Policy">
+    <div class="hero__content">
+      <h1 class="h1-accent">Cookie Policy</h1>
+      <p>Learn about how we use cookies and similar technologies on our website.</p>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="info-section" aria-labelledby="about-cookies-title">
+      <h2 id="about-cookies-title">About Cookies</h2>
+      <p>A cookie is a small text file that a website saves on your computer or mobile device when you visit the site. We use cookies to:</p>
+      <ul>
+        <li>Remember your preferences and settings</li>
+        <li>Improve your browsing experience</li>
+        <li>Enable certain site functionality</li>
+        <li>Help us understand how you use our services</li>
+      </ul>
+    </section>
+
+    <section class="info-section" aria-labelledby="cookie-types-title">
+      <h2 id="cookie-types-title">Types of Cookies We Use</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>Essential Cookies</h3>
+          <p>Required for the website to function properly. These cannot be disabled.</p>
+          <ul>
+            <li>Security features</li>
+            <li>Basic functionality</li>
+            <li>Session management</li>
+            <li>Load balancing</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Preference Cookies</h3>
+          <p>Remember your settings and preferences.</p>
+          <ul>
+            <li>Language preferences</li>
+            <li>Region settings</li>
+            <li>Accessibility options</li>
+            <li>User interface customization</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Analytics Cookies</h3>
+          <p>Help us understand how visitors use our website.</p>
+          <ul>
+            <li>Visit duration</li>
+            <li>Pages visited</li>
+            <li>Traffic sources</li>
+            <li>User behavior</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section" aria-labelledby="cookie-management-title">
+      <h2 id="cookie-management-title">Managing Cookies</h2>
+      <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site, and some services and functionalities may not work.</p>
+      
+      <h3>Browser Settings</h3>
+      <p>Most web browsers allow you to manage cookies through their settings. You can:</p>
+      <ul>
+        <li>View cookies stored on your computer</li>
+        <li>Allow, block, or delete cookies</li>
+        <li>Set cookie preferences for different websites</li>
+        <li>Configure third-party cookie settings</li>
+      </ul>
+
+      <h3>Our Cookie Settings</h3>
+      <p>You can adjust your cookie preferences for our website at any time:</p>
+      <button class="btn-primary" onclick="openCookieSettings()">Cookie Settings</button>
+    </section>
+
+    <section class="info-section" aria-labelledby="privacy-info-title">
+      <h2 id="privacy-info-title">Additional Privacy Information</h2>
+      <p>For more information about how we protect your privacy, please review our:</p>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="termsofservice.html">Terms of Service</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="../About/community.html">Our community</a></li>
+            <li><a href="../About/departments.html">Departments</a></li>
+            <li><a href="../About/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="../resources/programs-services.html">Programs & services</a></li>
+            <li><a href="../resources/permits-licenses.html">Permits & licenses</a></li>
+            <li><a href="../resources/accessibility.html">Accessibility</a></li>
+            <li><a href="../resources/sitemap.html">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="termsofservice.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+  <script>
+    function openCookieSettings() {
+      // Implementation for cookie settings dialog
+      alert('Cookie settings functionality will be implemented here');
+    }
+  </script>
+</body>
+</html>

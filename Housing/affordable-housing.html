@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Affordable Housing</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Affordable Housing">
+    <div class="hero__content">
+      <h1 class="h1-accent">Affordable Housing Programs</h1>
+      <p>Find safe, affordable housing options and support programs in ToadVille Bay.</p>
+      <a class="btn-primary" href="./housing.html">Back to Housing Services</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="programs-title">
+      <h2 id="programs-title">Housing programs</h2>
+      <div class="grid">
+        <a class="card" href="#rental-assistance" aria-label="Rental assistance">
+          <h3>Rental Assistance</h3>
+          <p>Subsidies and support for qualifying low-income households.</p>
+        </a>
+        <a class="card" href="#social-housing" aria-label="Social housing">
+          <h3>Social Housing</h3>
+          <p>Community-owned affordable rental units for families and individuals.</p>
+        </a>
+        <a class="card" href="#first-time" aria-label="First-time homebuyers">
+          <h3>First-Time Homebuyers</h3>
+          <p>Down payment assistance and homeownership education programs.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="support-title">
+      <h2 id="support-title">Support services</h2>
+      <div class="grid">
+        <a class="card" href="#emergency" aria-label="Emergency housing">
+          <h3>Emergency Housing</h3>
+          <p>Temporary shelter and transitional housing for those in crisis.</p>
+        </a>
+        <a class="card" href="#counseling" aria-label="Housing counseling">
+          <h3>Housing Counseling</h3>
+          <p>Free advice on budgeting, tenant rights, and housing searches.</p>
+        </a>
+        <a class="card" href="#seniors" aria-label="Senior housing">
+          <h3>Senior Housing</h3>
+          <p>Specialized housing options for older adults and accessibility needs.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="rental-assistance" class="content-block" aria-labelledby="rental-title">
+      <h2 id="rental-title">Rental Assistance Program</h2>
+      <p>Help with rent payments for eligible households:</p>
+      <ul>
+        <li><strong>Eligibility</strong> - Household income below 50% of area median income</li>
+        <li><strong>Assistance Amount</strong> - Up to 70% of rent, maximum TB$800/month</li>
+        <li><strong>Duration</strong> - Renewable annually with income verification</li>
+        <li><strong>Application</strong> - Apply online or at Community Services office</li>
+        <li><strong>Waiting List</strong> - Priority given to families with children and seniors</li>
+        <li><strong>Requirements</strong> - Must be Canadian citizen or permanent resident</li>
+      </ul>
+    </section>
+
+    <section id="social-housing" class="content-block" aria-labelledby="social-title">
+      <h2 id="social-title">Social Housing Units</h2>
+      <p>Community-owned affordable rental housing:</p>
+      <ul>
+        <li><strong>Bayview Apartments</strong> - 48 units for families, rent geared to income</li>
+        <li><strong>Seniors Manor</strong> - 32 one-bedroom units for adults 55+</li>
+        <li><strong>Transitional Housing</strong> - 12 units for individuals moving to independence</li>
+        <li><strong>Rent Calculation</strong> - 30% of household income maximum</li>
+        <li><strong>Utilities Included</strong> - Heat, water, and basic cable included</li>
+        <li><strong>Maintenance</strong> - 24/7 emergency maintenance service</li>
+      </ul>
+    </section>
+
+    <section id="first-time" class="content-block" aria-labelledby="firsttime-title">
+      <h2 id="firsttime-title">First-Time Homebuyer Program</h2>
+      <p>Support for purchasing your first home:</p>
+      <ul>
+        <li><strong>Down Payment Loan</strong> - Up to TB$25,000 interest-free for 5 years</li>
+        <li><strong>Education Workshops</strong> - Free courses on homebuying process</li>
+        <li><strong>Credit Counseling</strong> - Help improving credit scores and debt management</li>
+        <li><strong>Income Limits</strong> - Household income below 80% of area median</li>
+        <li><strong>Property Limits</strong> - Purchase price under TB$400,000</li>
+        <li><strong>Occupancy Requirement</strong> - Must live in home as primary residence</li>
+      </ul>
+    </section>
+
+    <section class="news" aria-labelledby="news-title">
+      <h2 id="news-title">Housing news & updates</h2>
+      <article class="news-item">
+        <h3><a href="#">New Affordable Housing Development Approved</a></h3>
+        <p class="meta">June 2025 · Planning Department</p>
+        <p>60-unit mixed-income development breaking ground this fall. Applications will open in early 2026.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Rental Assistance Program Expansion</a></h3>
+        <p class="meta">May 2025 · Community Services</p>
+        <p>Additional funding secured to assist 25 more households. Applications now being accepted.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+            <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

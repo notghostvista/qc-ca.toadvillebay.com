@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Community Facilities</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Community Facilities">
+    <div class="hero__content">
+      <h1 class="h1-accent">Community Facilities & Booking</h1>
+      <p>Reserve spaces for events, meetings, and activities in our community facilities.</p>
+      <a class="btn-primary" href="./community.html">Back to Community Services</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="facilities-title">
+      <h2 id="facilities-title">Available facilities</h2>
+      <div class="grid">
+        <a class="card" href="#community-center" aria-label="Community center">
+          <h3>Community Center</h3>
+          <p>Large hall, meeting rooms, and kitchen facilities for events.</p>
+        </a>
+        <a class="card" href="#sports-complex" aria-label="Sports complex">
+          <h3>Sports Complex</h3>
+          <p>Gymnasium, fitness rooms, and outdoor courts.</p>
+        </a>
+        <a class="card" href="#parks" aria-label="Park pavilions">
+          <h3>Park Pavilions</h3>
+          <p>Covered outdoor spaces perfect for gatherings and celebrations.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="booking-title">
+      <h2 id="booking-title">Booking information</h2>
+      <div class="grid">
+        <a class="card" href="#rates" aria-label="Rental rates">
+          <h3>Rental Rates</h3>
+          <p>Pricing for residents, non-residents, and non-profit organizations.</p>
+        </a>
+        <a class="card" href="#process" aria-label="Booking process">
+          <h3>How to Book</h3>
+          <p>Step-by-step guide to reserving your space.</p>
+        </a>
+        <a class="card" href="#policies" aria-label="Facility policies">
+          <h3>Policies</h3>
+          <p>Rules, cancellation policy, and facility guidelines.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="community-center" class="content-block" aria-labelledby="center-title">
+      <h2 id="center-title">Community Center</h2>
+      <p>Our main community facility offers versatile spaces for all types of events:</p>
+      <ul>
+        <li><strong>Main Hall</strong> - Capacity 200 people, stage, sound system</li>
+        <li><strong>Meeting Rooms</strong> - 3 rooms accommodating 10-30 people each</li>
+        <li><strong>Commercial Kitchen</strong> - Full catering facilities available</li>
+        <li><strong>Outdoor Patio</strong> - Connected space for receptions</li>
+        <li><strong>Accessibility</strong> - Fully accessible with elevator and ramps</li>
+      </ul>
+    </section>
+
+    <section id="sports-complex" class="content-block" aria-labelledby="sports-title">
+      <h2 id="sports-title">Sports Complex</h2>
+      <p>Modern athletic facilities for sports, fitness, and recreation:</p>
+      <ul>
+        <li><strong>Gymnasium</strong> - Full court with bleacher seating</li>
+        <li><strong>Fitness Studio</strong> - Mirrored room for classes and training</li>
+        <li><strong>Outdoor Courts</strong> - Tennis, basketball, and pickleball</li>
+        <li><strong>Equipment Storage</strong> - Available for organized events</li>
+        <li><strong>Locker Rooms</strong> - Changing facilities and showers</li>
+      </ul>
+    </section>
+
+    <section id="parks" class="content-block" aria-labelledby="parks-title">
+      <h2 id="parks-title">Park Pavilions</h2>
+      <p>Beautiful outdoor venues in our community parks:</p>
+      <ul>
+        <li><strong>Waterfront Pavilion</strong> - Scenic bay views, capacity 100</li>
+        <li><strong>Forest Grove Shelter</strong> - Wooded setting, capacity 50</li>
+        <li><strong>Playground Pavilion</strong> - Near children's play area</li>
+        <li><strong>Picnic Areas</strong> - Multiple tables and BBQ facilities</li>
+        <li><strong>Parking</strong> - Ample parking at all locations</li>
+      </ul>
+    </section>
+
+    <section id="rates" class="content-block" aria-labelledby="rates-title">
+      <h2 id="rates-title">Rental Rates</h2>
+      <p>Affordable rates with discounts for residents and non-profits:</p>
+      <ul>
+        <li><strong>Residents</strong> - 50% discount on all facility rentals</li>
+        <li><strong>Non-profits</strong> - 25% discount with proof of status</li>
+        <li><strong>Damage deposit</strong> - Required for all bookings, fully refundable</li>
+        <li><strong>Cleaning fee</strong> - Optional service or clean yourself</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

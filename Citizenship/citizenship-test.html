@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Citizenship Test</title>
+  <meta content="ToadVille Bay Citizenship Test" property="og:title" />
+  <meta content="Prepare for and book your citizenship knowledge test - study materials, practice tests, and booking information." property="og:description" />
+  <meta content="https://toadvillebay.com/Citizenship/citizenship-test.html" property="og:url" />
+  <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+  <meta content="#0066CC" data-react-helmet="true" name="theme-color" />
+  <link rel="icon" type="image/png" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="apple-touch-icon" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* Improve readability for citizenship test page */
+    .content-block {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 24px 0;
+      margin: 24px 0;
+      box-shadow: none;
+    }
+    .content-block h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #4A90E2;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .content-block p, .content-block li {
+      color: #e5e7eb;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .content-block ul {
+      margin: 16px 0;
+    }
+    .content-block li {
+      margin: 8px 0;
+    }
+    .content-block ol {
+      margin: 16px 0;
+    }
+    .content-block ol li {
+      margin: 8px 0;
+      color: #e5e7eb;
+    }
+    /* Fix card grid text to be light on dark backgrounds */
+    .card-grid .card p {
+      color: #d1d5db !important;
+    }
+    .card-grid .card h3 {
+      color: #4A90E2 !important;
+    }
+    /* Ensure all page content has bright text */
+    .page-content p, .page-content li, .page-content ol li {
+      color: #e5e7eb !important;
+    }
+    /* Ensure strong tags are bright and visible */
+    .content-block strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Citizenship Test">
+    <div class="hero__content">
+      <h1 class="h1-accent">Citizenship Test</h1>
+      <p>Prepare for and book your citizenship knowledge test.</p>
+      <a class="btn-primary" href="./citizenship.html">Back to Citizenship Services</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="test-info-title">
+      <h2 id="test-info-title">About the test</h2>
+      <div class="grid">
+        <a class="card" href="#test-format" aria-label="Test format">
+          <h3>Test Format</h3>
+          <p>What to expect on test day and how the test is structured.</p>
+        </a>
+        <a class="card" href="#study-materials" aria-label="Study materials">
+          <h3>Study Materials</h3>
+          <p>Official study guide and practice tests to help you prepare.</p>
+        </a>
+        <a class="card" href="#test-topics" aria-label="Test topics">
+          <h3>Test Topics</h3>
+          <p>History, geography, government, and symbols of ToadVille Bay.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="booking-title">
+      <h2 id="booking-title">Book your test</h2>
+      <div class="grid">
+        <a class="card" href="#test-invitation" aria-label="Test invitation">
+          <h3>Test Invitation</h3>
+          <p>How you'll receive your invitation and what it contains.</p>
+        </a>
+        <a class="card" href="#online-booking" aria-label="Online booking">
+          <h3>Online Booking</h3>
+          <p>Book your test appointment through our online system.</p>
+        </a>
+        <a class="card" href="#test-locations" aria-label="Test locations">
+          <h3>Test Locations</h3>
+          <p>Where citizenship tests are conducted in ToadVille Bay.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="preparation-title">
+      <h2 id="preparation-title">Test preparation</h2>
+      <div class="grid">
+        <a class="card" href="#study-tips" aria-label="Study tips">
+          <h3>Study Tips</h3>
+          <p>Effective strategies for preparing for your citizenship test.</p>
+        </a>
+        <a class="card" href="#practice-tests" aria-label="Practice tests">
+          <h3>Practice Tests</h3>
+          <p>Free online practice tests to help you prepare.</p>
+        </a>
+        <a class="card" href="#study-groups" aria-label="Study groups">
+          <h3>Study Groups</h3>
+          <p>Join local study groups and preparation classes.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="test-format" class="content-block" aria-labelledby="format-title">
+      <h2 id="format-title">Citizenship Test Format</h2>
+      <p>What to expect on your citizenship test day:</p>
+      <ul>
+        <li><strong>Test Type</strong> - Multiple choice questions (20 questions)</li>
+        <li><strong>Passing Score</strong> - Must answer 15 out of 20 questions correctly (75%)</li>
+        <li><strong>Time Limit</strong> - 30 minutes to complete the test</li>
+        <li><strong>Language</strong> - Available in English or French</li>
+        <li><strong>Age Range</strong> - Required for applicants aged 18-54</li>
+        <li><strong>Test Topics</strong> - History, geography, economy, government, laws, and symbols</li>
+        <li><strong>Retakes</strong> - If you fail, you can retake the test</li>
+        <li><strong>Results</strong> - You'll know immediately if you passed or failed</li>
+      </ul>
+    </section>
+
+    <section id="study-materials" class="content-block" aria-labelledby="materials-title">
+      <h2 id="materials-title">Official Study Materials</h2>
+      <p>Use these official resources to prepare for your test:</p>
+      <ul>
+        <li><strong>"Discover ToadVille Bay"</strong> - Official study guide (free download)</li>
+        <li><strong>Audio Study Guide</strong> - Listen to the study guide content</li>
+        <li><strong>Practice Tests</strong> - Online practice tests with instant feedback</li>
+        <li><strong>Mobile App</strong> - "ToadVille Bay Citizenship Test Prep" app</li>
+        <li><strong>Video Series</strong> - Educational videos about ToadVille Bay history</li>
+        <li><strong>Interactive Timeline</strong> - Key events in ToadVille Bay history</li>
+        <li><strong>Study Flashcards</strong> - Digital flashcards for key facts</li>
+        <li><strong>Multilingual Resources</strong> - Study materials in multiple languages</li>
+      </ul>
+    </section>
+
+    <section id="test-topics" class="content-block" aria-labelledby="topics-title">
+      <h2 id="topics-title">Test Topics & Content Areas</h2>
+      <p>Your citizenship test will cover these areas of knowledge:</p>
+      <ul>
+        <li><strong>ToadVille Bay History</strong> - Indigenous peoples, European exploration, confederation</li>
+        <li><strong>Geography</strong> - Provinces, territories, capitals, major cities, natural features</li>
+        <li><strong>Government</strong> - Federal, provincial, municipal levels; elections and voting</li>
+        <li><strong>Legal System</strong> - Laws, courts, police, rights and responsibilities</li>
+        <li><strong>Economy</strong> - Industries, natural resources, trade, employment</li>
+        <li><strong>Symbols</strong> - Flag, anthem, coat of arms, official languages</li>
+        <li><strong>Culture</strong> - Arts, sports, traditions, multiculturalism</li>
+        <li><strong>Famous ToadVille Bay Citizens</strong> - Historical and contemporary figures</li>
+      </ul>
+    </section>
+
+    <section id="test-invitation" class="content-block" aria-labelledby="invitation-title">
+      <h2 id="invitation-title">Receiving Your Test Invitation</h2>
+      <p>How you'll be invited to take your citizenship test:</p>
+      <ul>
+        <li><strong>Timing</strong> - Invitation sent 6-18 months after application submission</li>
+        <li><strong>Delivery Method</strong> - Email and regular mail notification</li>
+        <li><strong>Notice Period</strong> - At least 3 weeks advance notice</li>
+        <li><strong>Invitation Contents</strong> - Date, time, location, what to bring</li>
+        <li><strong>Rescheduling</strong> - Can reschedule once for valid reasons</li>
+        <li><strong>No-Show Policy</strong> - Missing test without notice may delay application</li>
+        <li><strong>Special Accommodations</strong> - Request accommodations when you receive invitation</li>
+        <li><strong>Confirmation</strong> - Must confirm attendance within 10 days</li>
+      </ul>
+    </section>
+
+    <section id="online-booking" class="content-block" aria-labelledby="booking-system-title">
+      <h2 id="booking-system-title">Online Test Booking System</h2>
+      <p>Book your citizenship test appointment online:</p>
+      </div>
+      <ul>
+        <li><strong>Available Dates</strong> - Tests offered Monday-Saturday</li>
+        <li><strong>Time Slots</strong> - Morning (9:00 AM) and afternoon (2:00 PM) sessions</li>
+        <li><strong>Advance Booking</strong> - Book up to 6 months in advance</li>
+        <li><strong>Cancellation</strong> - Cancel up to 48 hours before test</li>
+        <li><strong>Accessibility</strong> - Request accommodations during booking</li>
+        <li><strong>Language Choice</strong> - Select English or French test</li>
+      </ul>
+    </section>
+
+    <section id="test-locations" class="content-block" aria-labelledby="locations-title">
+      <h2 id="locations-title">Test Locations</h2>
+      <p>Citizenship tests are conducted at these locations:</p>
+      <ul>
+        <li><strong>ToadVille Bay Citizenship Office</strong> - 789 Government Street (Main location)</li>
+        <li><strong>Community College Campus</strong> - 456 Education Drive (Weekends only)</li>
+        <li><strong>Public Library Main Branch</strong> - 123 Knowledge Avenue (Evening tests)</li>
+        <li><strong>University Conference Center</strong> - 321 Campus Road (Large groups)</li>
+        <li><strong>Regional Service Center</strong> - 654 Service Boulevard (Accessible location)</li>
+        <li><strong>Online Testing</strong> - From home (pilot program, limited availability)</li>
+        <li><strong>Mobile Testing</strong> - For remote communities (by appointment)</li>
+        <li><strong>All Locations</strong> - Fully accessible with parking available</li>
+      </ul>
+    </section>
+
+    <section id="study-tips" class="content-block" aria-labelledby="tips-title">
+      <h2 id="tips-title">Effective Study Tips</h2>
+      <p>Strategies to help you succeed on your citizenship test:</p>
+      <ul>
+        <li><strong>Start Early</strong> - Begin studying as soon as you apply for citizenship</li>
+        <li><strong>Read the Official Guide</strong> - "Discover ToadVille Bay" is your primary resource</li>
+        <li><strong>Take Practice Tests</strong> - Use online practice tests to identify weak areas</li>
+        <li><strong>Study Regularly</strong> - 30 minutes daily is better than cramming</li>
+        <li><strong>Use Multiple Formats</strong> - Read, listen, watch videos, use flashcards</li>
+        <li><strong>Join Study Groups</strong> - Learn with other citizenship applicants</li>
+        <li><strong>Focus on Weak Areas</strong> - Spend extra time on topics you find difficult</li>
+        <li><strong>Stay Current</strong> - Learn about recent events and current government</li>
+      </ul>
+    </section>
+
+    <section id="practice-tests" class="content-block" aria-labelledby="practice-title">
+      <h2 id="practice-title">Free Practice Tests</h2>
+      <p>Test your knowledge with these free online practice tests:</p>
+      <ul>
+        <li><strong>Official Practice Test</strong> - 20 questions similar to actual test</li>
+        <li><strong>Chapter-by-Chapter Quizzes</strong> - Test knowledge of specific topics</li>
+        <li><strong>Timed Practice Tests</strong> - Simulate actual test conditions</li>
+        <li><strong>Unlimited Attempts</strong> - Take practice tests as many times as needed</li>
+        <li><strong>Instant Feedback</strong> - See correct answers and explanations</li>
+        <li><strong>Progress Tracking</strong> - Monitor your improvement over time</li>
+        <li><strong>Mobile Compatible</strong> - Practice on your phone or tablet</li>
+        <li><strong>Multilingual</strong> - Available in English and French</li>
+      </ul>
+    </section>
+
+    <section class="news" aria-labelledby="test-news-title">
+      <h2 id="test-news-title">Citizenship test updates</h2>
+      <article class="news-item">
+        <h3><a href="#">Online Test Pilot Program</a></h3>
+        <p class="meta">Starting January 2026 · Citizenship Services</p>
+        <p>Limited online citizenship testing now available for eligible applicants. Secure remote proctoring ensures test integrity.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">New Study App Released</a></h3>
+        <p class="meta">September 2025 · Digital Services</p>
+        <p>Updated "ToadVille Bay Citizenship Test Prep" app now available with new practice questions and interactive features.</p>
+      </article>
+    </section>
+
+    <section class="content-block" aria-labelledby="after-test-title">
+      <h2 id="after-test-title">After Your Test</h2>
+      <ul>
+        <li><strong>Immediate Results</strong> - You'll know right away if you passed</li>
+        <li><strong>If You Pass</strong> - Proceed to citizenship interview (if required)</li>
+        <li><strong>If You Fail</strong> - Can retake test; additional study time recommended</li>
+        <li><strong>Retake Scheduling</strong> - Usually 4-8 weeks after failed attempt</li>
+        <li><strong>No Additional Fee</strong> - Retaking the test is included in your application fee</li>
+        <li><strong>Study Support</strong> - Additional study resources provided for retakes</li>
+        <li><strong>Interview Preparation</strong> - If you pass, prepare for citizenship interview</li>
+        <li><strong>Ceremony Invitation</strong> - Final step after passing test and interview</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

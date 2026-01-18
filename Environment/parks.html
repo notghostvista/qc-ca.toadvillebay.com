@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Parks & Trails</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Parks and Trails">
+    <div class="hero__content">
+      <h1 class="h1-accent">Parks & Trails</h1>
+      <p>Explore ToadVille Bay's beautiful parks, trails, and natural spaces.</p>
+      <a class="btn-primary" href="./environment.html">Back to Environment</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="parks-title">
+      <h2 id="parks-title">Our parks</h2>
+      <div class="grid">
+        <a class="card" href="#waterfront" aria-label="Waterfront Park">
+          <h3>Waterfront Park</h3>
+          <p>Scenic bay views, walking paths, and picnic areas.</p>
+        </a>
+        <a class="card" href="#forest" aria-label="Forest Grove Park">
+          <h3>Forest Grove Park</h3>
+          <p>Wooded trails, playground, and nature education center.</p>
+        </a>
+        <a class="card" href="#community" aria-label="Community Gardens">
+          <h3>Community Gardens</h3>
+          <p>Shared growing spaces and sustainable gardening programs.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="trails-title">
+      <h2 id="trails-title">Trail system</h2>
+      <div class="grid">
+        <a class="card" href="#coastal" aria-label="Coastal Trail">
+          <h3>Coastal Trail</h3>
+          <p>5km waterfront path connecting all major parks.</p>
+        </a>
+        <a class="card" href="#forest-trails" aria-label="Forest Trails">
+          <h3>Forest Trails</h3>
+          <p>Network of hiking paths through old-growth forest.</p>
+        </a>
+        <a class="card" href="#bike-paths" aria-label="Bike Paths">
+          <h3>Bike Paths</h3>
+          <p>Safe cycling routes throughout the community.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="waterfront" class="content-block" aria-labelledby="waterfront-title">
+      <h2 id="waterfront-title">Waterfront Park</h2>
+      <p>Our flagship park offers stunning views and diverse recreational opportunities:</p>
+      <ul>
+        <li><strong>Promenade</strong> - 2km paved walkway along the shoreline</li>
+        <li><strong>Beach Access</strong> - Sandy beach with swimming area (seasonal lifeguards)</li>
+        <li><strong>Picnic Areas</strong> - Multiple pavilions and BBQ facilities</li>
+        <li><strong>Playground</strong> - Modern equipment for ages 2-12</li>
+        <li><strong>Boat Launch</strong> - Public ramp for small watercraft</li>
+        <li><strong>Parking</strong> - 200 spaces including accessible spots</li>
+      </ul>
+    </section>
+
+    <section id="forest" class="content-block" aria-labelledby="forest-title">
+      <h2 id="forest-title">Forest Grove Park</h2>
+      <p>Immerse yourself in nature at our largest green space:</p>
+      <ul>
+        <li><strong>Old-Growth Forest</strong> - Protected 50-hectare forest preserve</li>
+        <li><strong>Nature Center</strong> - Educational programs and exhibits</li>
+        <li><strong>Hiking Trails</strong> - 8km of marked trails for all skill levels</li>
+        <li><strong>Wildlife Viewing</strong> - Bird watching platforms and quiet zones</li>
+        <li><strong>Adventure Playground</strong> - Natural play structures</li>
+        <li><strong>Group Camping</strong> - Overnight facilities for organized groups</li>
+      </ul>
+    </section>
+
+    <section id="community" class="content-block" aria-labelledby="community-title">
+      <h2 id="community-title">Community Gardens</h2>
+      <p>Grow your own food and connect with fellow gardeners:</p>
+      <ul>
+        <li><strong>Plot Rental</strong> - Seasonal plots available for residents</li>
+        <li><strong>Shared Tools</strong> - Common tool shed and water access</li>
+        <li><strong>Workshops</strong> - Monthly gardening education sessions</li>
+        <li><strong>Composting</strong> - Community composting program</li>
+        <li><strong>Children's Garden</strong> - Special area for young gardeners</li>
+        <li><strong>Harvest Sharing</strong> - Donate surplus to local food bank</li>
+      </ul>
+    </section>
+
+    <section class="news" aria-labelledby="conservation-title">
+      <h2 id="conservation-title">Conservation efforts</h2>
+      <article class="news-item">
+        <h3><a href="#">Native Plant Restoration Project</a></h3>
+        <p class="meta">Ongoing initiative</p>
+        <p>We're working to restore native vegetation in our parks and reduce invasive species. Volunteer opportunities available.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Pollinator Garden Initiative</a></h3>
+        <p class="meta">Spring 2025</p>
+        <p>New butterfly and bee gardens being established to support local pollinators and biodiversity.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+            <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

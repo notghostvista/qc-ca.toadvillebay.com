@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search – ToadVille Bay</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="card-grid" id="search-results">
+      <h2>Search results</h2>
+      <div class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="Legal/privacy.html">Privacy</a></li>
+            <li><a href="Legal/communityguidelines.html">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <div class="landing-copyright">© ToadVille Bay 2019–2026<span id="current-year"></span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/site-search.js"></script>
+</body>
+</html>

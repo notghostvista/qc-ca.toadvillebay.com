@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Housing</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="hero"><div class="hero__content"><h1>Housing</h1><p>Planning, permits, and affordable housing options.</p></div></section>
+  <main class="page-content">
+    <section class="card-grid"><h2>Plan & build</h2>
+      <div class="grid">
+        <a class="card" href="#permits"><h3>Permits</h3><p>Apply for building and renovation permits.</p></a>
+        <a class="card" href="#zoning"><h3>Zoning</h3><p>Check zoning, bylaws, and property information.</p></a>
+      </div>
+    </section>
+    <section class="card-grid"><h2>Affordable housing</h2>
+      <div class="grid">
+        <a class="card" href="#programs"><h3>Programs</h3><p>Supports and subsidy programs for residents.</p></a>
+        <a class="card" href="#providers"><h3>Providers</h3><p>Contact local housing providers and supports.</p></a>
+      </div>
+    </section>
+  </main>
+    <!-- Global Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+        </div>
+        <div class="footer-links-columns">
+          <div>
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Our community</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Programs & services</a></li>
+              <li><a href="#">Permits & licenses</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+              <li><a href="../Legal/privacy.html">Privacy</a></li>
+              <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+            <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

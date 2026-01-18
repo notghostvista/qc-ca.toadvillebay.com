@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Community Events</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Community Events">
+    <div class="hero__content">
+      <h1 class="h1-accent">Community Events & Programs</h1>
+      <p>Join us for festivals, workshops, and activities that bring our community together.</p>
+      <a class="btn-primary" href="./community.html">Back to Community Services</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="upcoming-title">
+      <h2 id="upcoming-title">Upcoming events</h2>
+      <div class="grid">
+        <a class="card" href="#festivals" aria-label="Annual festivals">
+          <h3>Annual Festivals</h3>
+          <p>Summer festival, harvest celebration, and winter lights.</p>
+        </a>
+        <a class="card" href="#workshops" aria-label="Educational workshops">
+          <h3>Workshops</h3>
+          <p>Learn new skills with our community education programs.</p>
+        </a>
+        <a class="card" href="#sports" aria-label="Sports and recreation">
+          <h3>Sports & Recreation</h3>
+          <p>Leagues, tournaments, and fitness activities for all ages.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="news" aria-labelledby="events-title">
+      <h2 id="events-title">This month's events</h2>
+      <article class="news-item">
+        <h3><a href="#">ToadVille Bay Summer Festival</a></h3>
+        <p class="meta">July 15-17, 2025 · Waterfront Park</p>
+        <p>Three days of music, food vendors, artisan markets, and family activities. Free admission with paid parking available.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Community Garden Workshop</a></h3>
+        <p class="meta">July 22, 2025 · Community Center</p>
+        <p>Learn sustainable gardening techniques and get started with your own plot. Registration required.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Youth Soccer League Registration</a></h3>
+        <p class="meta">Registration open until July 30</p>
+        <p>Ages 6-16 welcome. Season runs August through October. Equipment provided for beginners.</p>
+      </article>
+    </section>
+
+    <section id="festivals" class="content-block" aria-labelledby="festivals-title">
+      <h2 id="festivals-title">Annual Festivals</h2>
+      <ul>
+        <li><strong>Summer Festival (July)</strong> - Music, food, and artisan vendors</li>
+        <li><strong>Harvest Celebration (September)</strong> - Local produce and fall activities</li>
+        <li><strong>Winter Lights Festival (December)</strong> - Holiday market and light displays</li>
+        <li><strong>Spring Arts Fair (May)</strong> - Local artists and cultural performances</li>
+      </ul>
+    </section>
+
+    <section id="workshops" class="content-block" aria-labelledby="workshops-title">
+      <h2 id="workshops-title">Educational Workshops</h2>
+      <p>Our community education programs offer hands-on learning opportunities:</p>
+      <ul>
+        <li>Sustainable living and environmental awareness</li>
+        <li>Digital literacy and technology skills</li>
+        <li>Arts and crafts for all skill levels</li>
+        <li>Financial planning and budgeting</li>
+        <li>Home maintenance and repair basics</li>
+      </ul>
+    </section>
+
+    <section id="sports" class="content-block" aria-labelledby="sports-title">
+      <h2 id="sports-title">Sports & Recreation</h2>
+      <p>Stay active with our year-round recreational programs:</p>
+      <ul>
+        <li>Youth and adult soccer leagues</li>
+        <li>Community swimming programs</li>
+        <li>Walking and hiking groups</li>
+        <li>Tennis and pickleball courts</li>
+        <li>Fitness classes and wellness programs</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

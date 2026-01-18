@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ToadVille Bay</title>
+    <meta content="About ToadVille Bay" property="og:title" />
+    <meta content="Learn about ToadVille Bay, a fun and imaginative government website project." property="og:description" />
+    <meta content="https://toadvillebay.com/about.html" property="og:url" />
+    <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+    <link rel="icon" type="image/png" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="apple-touch-icon" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .profile-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, var(--tvb-surface-alt), white);
+        }
+
+        .profile-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--tvb-primary);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background: white;
+            animation: gentle-bounce 3s ease-in-out infinite;
+        }
+
+        .profile-image:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 2.5em;
+            color: var(--tvb-primary);
+            margin-bottom: 10px;
+        }
+
+        .profile-title {
+            font-size: 1.2em;
+            color: var(--tvb-text);
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .profile-bio {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            color: var(--tvb-text);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .about-card {
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .about-card h2 {
+            color: var(--tvb-primary);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .about-card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--tvb-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        .legal-section {
+            background: var(--tvb-surface-alt);
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .legal-card {
+            background: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .legal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .legal-card h3 {
+            color: var(--tvb-primary);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .legal-card p {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: var(--tvb-text);
+            opacity: 0.9;
+        }
+
+        .legal-card .cta-button {
+            background: var(--tvb-primary);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .legal-card .cta-button:hover {
+            background: var(--tvb-primary-dark);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2em;
+            }
+
+            .about-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="site-header__top">
+            <a class="site-brand" href="/index.html">
+                <img src="Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+                <span class="brand-text">ToadVille Bay</span>
+            </a>
+            <div class="site-utils">
+                <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+                    <label for="q" class="sr-only">Search ToadVille Bay</label>
+                    <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="profile-section">
+        <div class="profile-images">
+            <div class="profile-image">
+                <img src="Images and Videos/founder.jpg" alt="Site Owner IRL" />
+            </div>
+        </div>
+        <h1 class="profile-name">Gabriel M.</h1>
+        <p class="profile-title">Creator & Designer of ToadVille Bay</p>
+        <p class="profile-bio">
+            A Mexican-American web developer and designer from California, bringing a unique neurodivergent perspective to digital design. As an autistic creator, I've channeled my passion for accessibility and user experience into reimagining government services. ToadVille Bay is inspired by a game of the same name, where I've transformed its charming virtual country setting into an experiment in how government websites could be more engaging and inclusive. This project combines my love for gaming with my mission to make public services more accessible and user-friendly for everyone.
+        </p>
+    </section>
+
+    <main class="about-container">
+        <div class="about-grid">
+            <div class="about-card">
+                <h2>What is ToadVille Bay</h2>
+                <p>ToadVille Bay is a fictional country in a fictional universe with a lot of lore and history behind it that is being turned into a video game, there are lots to explore, ToadVille Bay is a community project that can help expand the lore beyond to what it is now!</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Project Mission</h2>
+                <p>Our mission is focused on user-experience and satisfaction, we do not force users to waste money on items that they will likely regret purchasing later on, we believe that once you pay for something, you own it and do not need to pay extra for other services.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Digital Innovation</h2>
+                <p>ToadVille Bay serves as a fictional government, this website is suppose to mimick ToadVille Bay services in game, you may also find game tips here, or you can use fan made Wiki's for that, whatever suits you!</p>
+            </div>
+        </div>
+
+        <section class="legal-section">
+            <div class="about-container">
+                <div class="legal-grid">
+                    <div class="legal-card">
+                        <h3>Privacy Policy</h3>
+                        <p>Learn about how we handle information and protect your privacy in this demonstration project.</p>
+                        <a href="Legal/privacy.html" class="cta-button">Read Privacy Policy</a>
+                    </div>
+
+                    <div class="legal-card">
+                        <h3>Terms of Service</h3>
+                        <p>Understand the terms and conditions that govern the use of our website.</p>
+                        <a href="Legal/termsofservice.html" class="cta-button">View Terms</a>
+                    </div>
+
+                    <div class="legal-card">
+                        <h3>Community Guidelines</h3>
+                        <p>Discover our community standards and expectations for participation.</p>
+                        <a href="Legal/communityguidelines.html" class="cta-button">Read Guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img class="footer-brand-img" src="Images and Videos/flag.png" alt="ToadVille Bay" />
+            </div>
+            <div class="footer-links-columns">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="About/community.html">Our community</a></li>
+                        <li><a href="About/departments.html">Departments</a></li>
+                        <li><a href="About/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources/programs-services.html">Programs & services</a></li>
+                        <li><a href="resources/permits-licenses.html">Permits & licenses</a></li>
+                        <li><a href="resources/accessibility.html">Accessibility</a></li>
+                        <li><a href="resources/sitemap.html">Site map</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="Legal/termsofservice.html">Terms of Service</a></li>
+                        <li><a href="Legal/privacy.html">Privacy</a></li>
+                        <li><a href="Legal/communityguidelines.html">Community Guidelines</a></li>
+                        <li><a href="Legal/cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+                    <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/site-search.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+</html>
+<!DOCTYPE html>

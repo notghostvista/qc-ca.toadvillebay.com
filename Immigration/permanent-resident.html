@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Permanent Resident Status</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="hero" aria-label="Permanent Resident">
+    <div class="hero__content">
+      <h1 class="h1-accent">Permanent Resident (PR)</h1>
+      <p>Information for people living in ToadVille Bay as permanent residents.</p>
+      <a class="btn-primary" href="./pr-card.html">Learn about the PR Card</a>
+    </div>
+  </section>
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="pr-essentials-title">
+      <h2 id="pr-essentials-title">PR essentials</h2>
+      <div class="grid">
+        <a class="card" href="./pr-card.html" aria-label="Permanent Resident card">
+          <h3>Permanent Resident Card</h3>
+          <p>What it is, who needs it, how to apply/renew/replace, and processing times.</p>
+        </a>
+        <a class="card" href="#rights" aria-label="Your rights and responsibilities as a PR">
+          <h3>Rights and responsibilities</h3>
+          <p>Healthcare, work and study, travel, taxes, and residency obligation.</p>
+        </a>
+        <a class="card" href="#settle" aria-label="Settle and access community services">
+          <h3>Settle & services</h3>
+          <p>Find newcomer services, language classes, jobs, and housing support.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="rights" class="content-block" aria-labelledby="rights-title">
+      <h2 id="rights-title">Rights and responsibilities</h2>
+      <ul>
+        <li>Live, work, and study anywhere in ToadVille Bay.</li>
+        <li>Access most social benefits and protections under the law.</li>
+        <li>Maintain residency obligation (e.g., minimum physical presence over a period).</li>
+        <li>Pay taxes and respect local, regional, and national laws.</li>
+      </ul>
+    </section>
+
+    <section id="travel" class="content-block" aria-labelledby="travel-title">
+      <h2 id="travel-title">Travel and your status</h2>
+      <p>Your PR Card is your proof of status for re-entering the country on commercial transport. Keep it valid and carry it when you travel.</p>
+    </section>
+  </main>
+    <!-- Global Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+        </div>
+        <div class="footer-links-columns">
+          <div>
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Our community</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Programs & services</a></li>
+              <li><a href="#">Permits & licenses</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+              <li><a href="../Legal/privacy.html">Privacy</a></li>
+              <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+            <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>

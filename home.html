@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Welcome</title>
+  <meta content="ToadVille Bay – Welcome" property="og:title" />
+  <meta content="Find programs, services, and information for ToadVille Bay residents and newcomers." property="og:description" />
+  <meta content="https://toadvillebay.com/" property="og:url" />
+  <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+  <meta content="#0066CC" data-react-helmet="true" name="theme-color" />
+  <link rel="icon" type="image/png" href="./Images and Videos/ToadVilleCOA.png" />
+  <link rel="apple-touch-icon" href="./Images and Videos/ToadVilleCOA.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    /* Page-scoped background (English/en.html only) */
+    .sun-bg {
+      position: relative;
+      min-height: 100vh;
+    }
+    .sun-bg::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url('./Images and Videos/ToadVilleCOA.png') center/700px no-repeat;
+      opacity: 0.10; /* subtle watermark */
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* Ensure content renders above the decorative background */
+    .sun-bg .site-header,
+    .sun-bg .hero,
+    .sun-bg .page-content,
+    .sun-bg .site-footer { position: relative; z-index: 1; }
+  </style>
+</head>
+<body class="sun-bg">
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="./Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" aria-label="Welcome">
+    <div class="hero__content">
+      <h1>Welcome to ToadVille Bay</h1>
+      <p>Find programs, services, and information.</p>
+      <a class="btn-primary" href="#services">Browse services</a>
+    </div>
+  </section>
+
+  <!-- Topics / Services Grid -->
+  <main class="page-content">
+    <section id="programs" class="most-requested" aria-labelledby="mr-title">
+      <h2 id="mr-title">Most requested</h2>
+      <ul class="link-list">
+        <li><a href="./TBExit27.html">ToadVille Bay Exit 27 - USA Operations Closure</a></li>
+        <li><a href="./About/piracy.html">Addressing Piracy Concerns</a></li>
+        <li><a href="./Legal/sanctions.html">Sanction/Ban Policy</a></li>
+        <li><a href="./About/steam-version-eos.html">Information regarding support for Windows Vista to 8.0</a></li>
+        <li><a href="./prime-minister.html">Prime Minister</a></li>
+      </ul>
+    </section>
+
+    <section id="services" class="card-grid" aria-labelledby="services-title">
+      <h2 id="services-title">Services and information</h2>
+      <div class="grid">
+        <a class="card" href="Immigration/immigration.html" aria-label="Immigration services">
+          <h3>Immigration</h3>
+          <p>Visas, permits, family sponsorship, and settlement resources.</p>
+        </a>
+         <a class="card" href="Provinces/provinces.html" aria-label="Provinces">
+          <h3>Provinces</h3>
+          <p>Information about each province and their unique features.</p>
+        </a>
+        <a class="card" href="Cities/cities.html" aria-label="Cities">
+          <h3>Cities</h3>
+          <p>Information about each city and their unique features.</p>
+        </a>
+        <a class="card" href="Guides/guides" aria-label="Guides">
+          <h3>Guides and Tips</h3>
+          <p>Learn how to play the ToadVille Bay Videogame.</p>
+        <a class="card" href="Citizenship/citizenship.html" aria-label="Citizenship services">
+          <h3>Citizenship</h3>
+          <p>Apply for citizenship, tests, ceremonies, and proof of status.</p>
+        </a>
+        <a class="card" href="Culture and History/cultureandhistory.html" aria-label="Culture and History">
+          <h3>Culture and History</h3>
+          <p>Learn more about what shapes ToadVille Bay.</p>
+        </a>
+        <a class="card" href="Community/community.html" aria-label="Community programs">
+          <h3>Community</h3>
+          <p>Events, facilities, and programs for residents.</p>
+        </a>
+        <a class="card" href="Environment/environment.html" aria-label="Environment">
+          <h3>Environment</h3>
+          <p>Conservation, parks, and waterfront stewardship.</p>
+        </a>
+        <a class="card" href="Transportation/transportation.html" aria-label="Transportation">
+          <h3>Transportation</h3>
+          <p>Roads, transit, and active travel routes.</p>
+        </a>
+        <a class="card" href="Law/laws.html" aria-label="Law">
+          <h3>Law</h3>
+          <p>View the laws of ToadVille Bay, pending bills, and its constitution.</p>
+        </a>
+        <a class="card" href="Wellness/wellness.html" aria-label="Wellness">
+          <h3>Wellness</h3>
+          <p>Health resources and recreation opportunities.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="news" class="news" aria-labelledby="news-title">
+      <h2 id="news-title">News</h2>
+      <article class="news-item">
+        <h3><a href="#">Waterfront trail improvements announced</a></h3>
+        <p class="meta">September 2025 · ToadVille Bay</p>
+        <p>Phase 2 includes new lighting, benches, and wayfinding signs.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Fall community cleanup – volunteers needed</a></h3>
+        <p class="meta">September 2025 · ToadVille Bay</p>
+        <p>Join us to help keep our shoreline clean and beautiful.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="./Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="./Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="./Legal/privacy.html">Privacy</a></li>
+            <li><a href="./Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/site-search.js"></script>
+</body>
+</html>

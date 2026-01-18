@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ToadVille Bay</title>
+    <meta content="Welcome to ToadVille Bay" property="og:title" />
+    <meta content="Official government website for ToadVille Bay - Immigration, Citizenship, Business, and Community Services." property="og:description" />
+    <meta content="https://toadvillebay.com/" property="og:url" />
+    <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+    <meta content="#0066CC" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/png" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="apple-touch-icon" href="./Images and Videos/ToadVilleCOA.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing">
+    <div class="container">
+        <main class="landing-content" role="main">
+            <div class="header">
+                <img class="site-flag" src="Images and Videos/flag.png" alt="ToadVille Bay Flag" />
+                <h1 class="site-title">Welcome to ToadVille Bay</h1>
+            </div>
+
+            <nav class="navigation-buttons" role="navigation">
+                <button class="nav-btn secondary" onclick="navigateTo('./home.html')">
+                    Enter Site
+                </button>
+                <div class="secondary-nav">
+                    <button class="nav-btn secondary" onclick="navigateTo('./TBExit27.html')">
+                        TBExit27
+                    </button>
+                    <button class="nav-btn secondary" onclick="navigateTo('./about.html')">
+                        About the Project
+                    </button>
+                </div>
+            </nav>
+
+            <footer class="landing-footer">
+                <p class="landing-description">
+                    Inspired by the game "ToadVille Bay" - A creative exploration of government website design
+                </p>
+                <div class="landing-copyright">
+                    © ToadVille Bay 2019–<span id="current-year"></span>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Update copyright year automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = currentYear;
+        });
+
+        // Navigation function for buttons
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

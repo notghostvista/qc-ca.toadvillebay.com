@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToadVille Bay – Biometrics Appointments</title>
+  <meta content="ToadVille Bay Biometrics Appointments" property="og:title" />
+  <meta content="Locate the nearest biometrics collection site and available times - booking, preparation, and locations." property="og:description" />
+  <meta content="https://toadvillebay.com/Immigration/biometrics.html" property="og:url" />
+  <meta content="https://toadvillebay.com/Images and Videos/ToadVilleCOA.png" property="og:image" />
+  <meta content="#0066CC" data-react-helmet="true" name="theme-color" />
+  <link rel="icon" type="image/png" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="apple-touch-icon" href="../Images and Videos/ToadVilleCOA.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <a class="site-brand" href="/index.html">
+        <img src="../Images and Videos/flag.png" alt="ToadVille Bay" class="brand-mark" />
+        <span class="brand-text">ToadVille Bay</span>
+      </a>
+      <div class="site-utils">
+        <form class="site-search" role="search" aria-label="Site search" onsubmit="handleSearch(event)">
+          <label for="q" class="sr-only">Search ToadVille Bay</label>
+          <input id="q" name="q" type="search" placeholder="Search ToadVille Bay" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Biometrics Appointments">
+    <div class="hero__content">
+      <h1 class="h1-accent">Biometrics Appointments</h1>
+      <p>Locate the nearest biometrics collection site and available times.</p>
+      <a class="btn-primary" href="./immigration.html">Back to Immigration</a>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <section class="card-grid" aria-labelledby="locations-title">
+      <h2 id="locations-title">Find locations</h2>
+      <div class="grid">
+        <a class="card" href="#toadville-center" aria-label="ToadVille Bay Biometrics Center">
+          <h3>ToadVille Bay Center</h3>
+          <p>Main biometrics collection site in downtown ToadVille Bay.</p>
+        </a>
+        <a class="card" href="#regional-locations" aria-label="Regional locations">
+          <h3>Regional Locations</h3>
+          <p>Biometrics sites in surrounding communities and regions.</p>
+        </a>
+        <a class="card" href="#mobile-services" aria-label="Mobile biometrics services">
+          <h3>Mobile Services</h3>
+          <p>Traveling biometrics collection for remote areas.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="appointment-title">
+      <h2 id="appointment-title">Book your appointment</h2>
+      <div class="grid">
+        <a class="card" href="#online-booking" aria-label="Online booking">
+          <h3>Online Booking</h3>
+          <p>Book your appointment 24/7 through our online system.</p>
+        </a>
+        <a class="card" href="#phone-booking" aria-label="Phone booking">
+          <h3>Phone Booking</h3>
+          <p>Call our booking center to schedule your appointment.</p>
+        </a>
+        <a class="card" href="#walk-in-hours" aria-label="Walk-in availability">
+          <h3>Walk-In Hours</h3>
+          <p>Limited walk-in appointments available during specific hours.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-labelledby="preparation-title">
+      <h2 id="preparation-title">How to prepare</h2>
+      <div class="grid">
+        <a class="card" href="#what-to-bring" aria-label="What to bring">
+          <h3>What to Bring</h3>
+          <p>Required documents and identification for your appointment.</p>
+        </a>
+        <a class="card" href="#appointment-tips" aria-label="Appointment tips">
+          <h3>Appointment Tips</h3>
+          <p>Tips to make your appointment quick and easy.</p>
+        </a>
+        <a class="card" href="#accessibility" aria-label="Accessibility services">
+          <h3>Accessibility</h3>
+          <p>Accommodations available for people with disabilities.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="toadville-center" class="content-block" aria-labelledby="center-title">
+      <h2 id="center-title">ToadVille Bay Biometrics Center</h2>
+      <p>Main biometrics collection site serving ToadVille Bay and surrounding areas:</p>
+      <ul>
+        <li><strong>Address</strong> - 456 Immigration Boulevard, ToadVille Bay, TB V1A 2B3</li>
+        <li><strong>Hours</strong> - Monday-Friday: 8:00 AM - 6:00 PM, Saturday: 9:00 AM - 3:00 PM</li>
+        <li><strong>Closed</strong> - Sundays and statutory holidays</li>
+        <li><strong>Parking</strong> - Free 2-hour parking available on-site</li>
+        <li><strong>Public Transit</strong> - Routes 1, 2, and 4 stop within 2 blocks</li>
+        <li><strong>Accessibility</strong> - Fully wheelchair accessible with elevator access</li>
+        <li><strong>Languages</strong> - Service available in English, French, Spanish, and Mandarin</li>
+        <li><strong>Appointment Required</strong> - No walk-ins accepted at this location</li>
+      </ul>
+    </section>
+
+    <section id="regional-locations" class="content-block" aria-labelledby="regional-title">
+      <h2 id="regional-title">Regional Biometrics Locations</h2>
+      <p>Additional biometrics sites in surrounding communities:</p>
+      <ul>
+        <li><strong>Bay View Service Center</strong> - 123 Harbor Street, Bay View (Tuesdays & Thursdays)</li>
+        <li><strong>Mountain Ridge Office</strong> - 789 Alpine Road, Mountain Ridge (Wednesdays only)</li>
+        <li><strong>Coastal Town Hall</strong> - 321 Main Street, Coastal Town (First Friday of each month)</li>
+        <li><strong>Island Ferry Terminal</strong> - Terminal Building, Island Ferry (By appointment only)</li>
+        <li><strong>University Campus</strong> - Student Services Building, ToadVille University (Students only)</li>
+        <li><strong>Airport Location</strong> - International Terminal, ToadVille Bay Airport (Transit passengers)</li>
+        <li><strong>Border Crossing</strong> - Peace Arch Border Station (Limited hours)</li>
+      </ul>
+    </section>
+
+    <section id="mobile-services" class="content-block" aria-labelledby="mobile-title">
+      <h2 id="mobile-title">Mobile Biometrics Services</h2>
+      <p>Traveling biometrics collection for remote and underserved areas:</p>
+      <ul>
+        <li><strong>Schedule</strong> - Visits remote communities on rotating monthly schedule</li>
+        <li><strong>Advance Booking Required</strong> - Must book at least 2 weeks in advance</li>
+        <li><strong>Minimum Group Size</strong> - 10 people required for mobile service visit</li>
+        <li><strong>Community Coordination</strong> - Work with local community leaders to organize</li>
+        <li><strong>Equipment</strong> - Full biometrics collection capability in mobile unit</li>
+        <li><strong>Cost</strong> - Same TB$85 fee as regular locations</li>
+        <li><strong>Weather Dependent</strong> - Service may be cancelled due to severe weather</li>
+        <li><strong>Contact</strong> - Call (250) 555-MOBILE to request mobile service</li>
+      </ul>
+    </section>
+
+    <section id="online-booking" class="content-block" aria-labelledby="booking-title">
+      <h2 id="booking-title">Online Appointment Booking</h2>
+      <p>Book your biometrics appointment online 24/7:</p>
+      <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; margin: 16px 0;">
+        <h3>Biometrics Booking Portal</h3>
+        <p><strong>Book your appointment online:</strong></p>
+        <ol>
+          <li>Visit: <strong>biometrics.toadvillebay.ca</strong></li>
+          <li>Enter your application number</li>
+          <li>Select your preferred location</li>
+          <li>Choose available date and time</li>
+          <li>Confirm your appointment details</li>
+          <li>Receive confirmation email</li>
+        </ol>
+        <p><em>Note: This is a simulated portal for demonstration purposes.</em></p>
+      </div>
+      <ul>
+        <li><strong>Available 24/7</strong> - Book anytime, anywhere with internet access</li>
+        <li><strong>Real-Time Availability</strong> - See current available appointments</li>
+        <li><strong>Confirmation Email</strong> - Receive booking confirmation and reminder</li>
+        <li><strong>Reschedule Online</strong> - Change your appointment up to 24 hours before</li>
+        <li><strong>Family Booking</strong> - Book multiple family members at same time</li>
+        <li><strong>Accessibility Options</strong> - Request accommodations during booking</li>
+      </ul>
+    </section>
+
+    <section id="what-to-bring" class="content-block" aria-labelledby="bring-title">
+      <h2 id="bring-title">What to Bring to Your Appointment</h2>
+      <p>Required documents and items for your biometrics appointment:</p>
+      <ul>
+        <li><strong>Biometrics Instruction Letter</strong> - The letter you received with your application number</li>
+        <li><strong>Valid Passport</strong> - Current passport used for your immigration application</li>
+        <li><strong>Photo Identification</strong> - Government-issued ID with your photo</li>
+        <li><strong>Application Receipt</strong> - Proof of payment for biometrics fee (TB$85)</li>
+        <li><strong>Appointment Confirmation</strong> - Email or printed confirmation of your appointment</li>
+        <li><strong>Glasses</strong> - If you normally wear glasses, bring them for the photo</li>
+        <li><strong>Contact Lenses</strong> - Colored contacts must be removed before photo</li>
+        <li><strong>Children's Documents</strong> - Birth certificate for children under 14</li>
+      </ul>
+    </section>
+
+    <section id="appointment-tips" class="content-block" aria-labelledby="tips-title">
+      <h2 id="tips-title">Tips for a Smooth Appointment</h2>
+      <p>Make your biometrics appointment quick and easy:</p>
+      <ul>
+        <li><strong>Arrive Early</strong> - Arrive 15 minutes before your scheduled time</li>
+        <li><strong>Clean Hands</strong> - Wash hands thoroughly before fingerprinting</li>
+        <li><strong>Remove Jewelry</strong> - Take off rings and bracelets that might interfere</li>
+        <li><strong>Avoid Hand Lotion</strong> - Don't use lotion on hands day of appointment</li>
+        <li><strong>Dress Appropriately</strong> - Avoid clothing that covers your face or head</li>
+        <li><strong>Bring Documents</strong> - Have all required documents organized and ready</li>
+        <li><strong>Stay Calm</strong> - Relax during the process; staff will guide you</li>
+        <li><strong>Ask Questions</strong> - Don't hesitate to ask if you need clarification</li>
+      </ul>
+    </section>
+
+    <section id="accessibility" class="content-block" aria-labelledby="access-title">
+      <h2 id="access-title">Accessibility Services</h2>
+      <p>Accommodations available for people with disabilities:</p>
+      <ul>
+        <li><strong>Wheelchair Access</strong> - All locations are wheelchair accessible</li>
+        <li><strong>Sign Language</strong> - ASL interpreters available with advance notice</li>
+        <li><strong>Visual Impairment</strong> - Staff assistance available for visually impaired clients</li>
+        <li><strong>Hearing Impairment</strong> - Written instructions and visual cues provided</li>
+        <li><strong>Mobility Assistance</strong> - Staff can help with positioning for biometrics</li>
+        <li><strong>Service Animals</strong> - Service animals welcome at all locations</li>
+        <li><strong>Extended Time</strong> - Additional time allocated for clients who need it</li>
+        <li><strong>Request Accommodations</strong> - Call ahead to arrange special accommodations</li>
+      </ul>
+    </section>
+
+    <section class="content-block" aria-labelledby="process-title">
+      <h2 id="process-title">What Happens During Your Appointment</h2>
+      <ul>
+        <li><strong>Check-In</strong> - Present your documents at the reception desk</li>
+        <li><strong>Verification</strong> - Staff will verify your identity and application</li>
+        <li><strong>Digital Photo</strong> - Professional digital photograph taken</li>
+        <li><strong>Fingerprints</strong> - Electronic fingerprint scanning (all 10 fingers)</li>
+        <li><strong>Quality Check</strong> - Staff ensure all biometrics meet standards</li>
+        <li><strong>Completion</strong> - Receive confirmation that biometrics are complete</li>
+        <li><strong>Duration</strong> - Entire process typically takes 15-30 minutes</li>
+        <li><strong>Next Steps</strong> - Information about what happens next in your application</li>
+      </ul>
+    </section>
+
+    <section class="news" aria-labelledby="biometrics-news-title">
+      <h2 id="biometrics-news-title">Biometrics updates & news</h2>
+      <article class="news-item">
+        <h3><a href="#">New Biometrics Center Opening</a></h3>
+        <p class="meta">November 2025 · Immigration Services</p>
+        <p>New biometrics collection center opening in Northside District. Extended hours and weekend service available.</p>
+      </article>
+      <article class="news-item">
+        <h3><a href="#">Mobile Service Expansion</a></h3>
+        <p class="meta">October 2025 · Regional Services</p>
+        <p>Mobile biometrics service expanding to serve 12 additional remote communities. New schedule available online.</p>
+      </article>
+    </section>
+
+    <section class="content-block" aria-labelledby="contact-bio-title">
+      <h2 id="contact-bio-title">Contact Biometrics Services</h2>
+      <ul>
+        <li><strong>Booking Center</strong> - (250) 555-BIOMET (246638)</li>
+        <li><strong>Mobile Services</strong> - (250) 555-MOBILE (662453)</li>
+        <li><strong>Technical Support</strong> - (250) 555-BIOTECH (2468324)</li>
+        <li><strong>Email</strong> - biometrics@toadvillebay.ca</li>
+        <li><strong>Hours</strong> - Monday-Friday 7:00 AM - 7:00 PM PT</li>
+        <li><strong>Emergency Rebooking</strong> - (250) 555-URGENT for same-day issues</li>
+        <li><strong>Accessibility Coordinator</strong> - (250) 555-ACCESS for accommodation requests</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-img" src="../Images and Videos/flag.png" alt="ToadVille Bay" />
+      </div>
+      <div class="footer-links-columns">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our community</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Programs & services</a></li>
+            <li><a href="#">Permits & licenses</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../Legal/termsofservice.html">Terms of Service</a></li>
+            <li><a href="../Legal/privacy.html">Privacy</a></li>
+            <li><a href="../Legal/communityguidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="site-footer-brand" style="grid-column: 1 / -1; text-align:center;">
+          <span class="site-footer-text">© ToadVille Bay 2019-2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/site-search.js"></script>
+</body>
+</html>
