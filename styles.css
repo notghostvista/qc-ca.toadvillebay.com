@@ -191,11 +191,32 @@ a:hover {
 
 /* =============== HERO =============== */
 .hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--tvb-border);
   background:
     radial-gradient(1000px 420px at 20% 0%, rgba(59,130,246,0.16) 0%, rgba(34,51,85,0) 60%),
     linear-gradient(135deg, #0d1424, #0f1a33);
-  border-bottom: 1px solid var(--tvb-border);
 }
+
+/* blurred image layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Images and Video/background.png") center/cover no-repeat;
+  filter: blur(18px);
+  transform: scale(1.1);   /* prevents blur edge cutoff */
+  z-index: 0;
+  opacity: 0.4;            /* adjust strength */
+}
+
+/* keep content above */
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero__content {
   max-width: var(--tvb-container);
   margin: 0 auto;
